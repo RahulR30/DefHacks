@@ -16,7 +16,23 @@
 		59D94428249EAC9C00E09EF7 /* Hackathon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D94427249EAC9C00E09EF7 /* Hackathon.png */; };
 		59D9442A249EB37C00E09EF7 /* Hack.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D94429249EB37C00E09EF7 /* Hack.png */; };
 		59D9442C249EB3FA00E09EF7 /* Hack 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D9442B249EB3FA00E09EF7 /* Hack 2.png */; };
+		9F4E18DC249EEEB700E20D21 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4E18DB249EEEB700E20D21 /* Mapbox.framework */; };
+		9F4E18DD249EEEB700E20D21 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4E18DB249EEEB700E20D21 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F4E18DE249EEEB700E20D21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F4E18DD249EEEB700E20D21 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		598DE684249D627C00B8ADB8 /* DefHacksHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefHacksHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +47,7 @@
 		59D94429249EB37C00E09EF7 /* Hack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hack.png; path = ../../../Hack.png; sourceTree = "<group>"; };
 		59D9442B249EB3FA00E09EF7 /* Hack 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hack 2.png"; path = "../../../Hack 2.png"; sourceTree = "<group>"; };
 		9F4E18D9249EE5D300E20D21 /* mapbox-ios-sdk-5.9.0-dynamic-with-events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mapbox-ios-sdk-5.9.0-dynamic-with-events"; path = "../../Downloads/mapbox-ios-sdk-5.9.0-dynamic-with-events"; sourceTree = "<group>"; };
+		9F4E18DB249EEEB700E20D21 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../../Downloads/mapbox-ios-sdk-5.9.0-dynamic-with-events/dynamic/Mapbox.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F4E18DC249EEEB700E20D21 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 		9F4E18D8249EE5D300E20D21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F4E18DB249EEEB700E20D21 /* Mapbox.framework */,
 				9F4E18D9249EE5D300E20D21 /* mapbox-ios-sdk-5.9.0-dynamic-with-events */,
 			);
 			name = Frameworks;
@@ -97,6 +116,7 @@
 				598DE681249D627C00B8ADB8 /* Frameworks */,
 				598DE682249D627C00B8ADB8 /* Resources */,
 				9F4E18DA249EE5F600E20D21 /* ShellScript */,
+				9F4E18DE249EEEB700E20D21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
