@@ -30,6 +30,7 @@
 		59D94427249EAC9C00E09EF7 /* Hackathon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hackathon.png; path = ../../../Hackathon.png; sourceTree = "<group>"; };
 		59D94429249EB37C00E09EF7 /* Hack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Hack.png; path = ../../../Hack.png; sourceTree = "<group>"; };
 		59D9442B249EB3FA00E09EF7 /* Hack 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Hack 2.png"; path = "../../../Hack 2.png"; sourceTree = "<group>"; };
+		9F4E18D9249EE5D300E20D21 /* mapbox-ios-sdk-5.9.0-dynamic-with-events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "mapbox-ios-sdk-5.9.0-dynamic-with-events"; path = "../../Downloads/mapbox-ios-sdk-5.9.0-dynamic-with-events"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +49,7 @@
 			children = (
 				598DE686249D627C00B8ADB8 /* DefHacksHackathon */,
 				598DE685249D627C00B8ADB8 /* Products */,
+				9F4E18D8249EE5D300E20D21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +78,14 @@
 			path = DefHacksHackathon;
 			sourceTree = "<group>";
 		};
+		9F4E18D8249EE5D300E20D21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F4E18D9249EE5D300E20D21 /* mapbox-ios-sdk-5.9.0-dynamic-with-events */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +96,7 @@
 				598DE680249D627C00B8ADB8 /* Sources */,
 				598DE681249D627C00B8ADB8 /* Frameworks */,
 				598DE682249D627C00B8ADB8 /* Resources */,
+				9F4E18DA249EE5F600E20D21 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,6 +155,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F4E18DA249EE5F600E20D21 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		598DE680249D627C00B8ADB8 /* Sources */ = {
