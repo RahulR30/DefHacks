@@ -11,7 +11,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DefHacksHackathon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MGLMapView" customModule="DefHacksHackathon" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -28,9 +28,6 @@
                             <constraint firstItem="GWm-JL-cAZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QBX-fC-eXi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/mapbox/streets-v11"/>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
                         <outlet property="backgroundGradientView" destination="GWm-JL-cAZ" id="EhH-ug-P5v"/>
